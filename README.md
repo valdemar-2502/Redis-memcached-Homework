@@ -41,7 +41,7 @@ sudo apt update && apt install memcached
 ```
 *Приведите скриншот systemctl status memcached, где будет видно, что memcached запущен.*
 
-![mamcached](https://github.com/joos-net/redis-memcached/blob/main/memcached.jpg)
+![mamcached](https://github.com/valdemar-2502/Redis-memcached-Homework/blob/main/memcached1.png)
 
 ---
 
