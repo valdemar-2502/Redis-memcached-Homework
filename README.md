@@ -60,17 +60,20 @@ get KEY
 ```
 sudo apt update && apt install redis
 ```
-![Redis](https://github.com/joos-net/redis-memcached/blob/main/redis.jpg)
+![Redis](https://github.com/valdemar-2502/Redis-memcached-Homework/blob/main/redis1.png)
 
 redis.sh
-```bash
-for key in $(redis-cli -p 6379 keys \*);
-        do echo -n "Key : '$key' - "
-                redis-cli -p 6379 GET $key;
+```echo ""
+echo "Вывод всех ключей:"
+echo "===================="
+redis-cli --scan --pattern '*' | while read key; do
+    value=$(redis-cli GET "$key")
+    echo "Key: '$key' - Value: '$value'"
 done
 ```
 *Через redis-cli достаньте все записанные ключи и значения из базы, приведите скриншот этой операции.*
-![redis_keys_mget](https://github.com/joos-net/redis-memcached/blob/main/redis_keys_mget.jpg)
+![redis_keys_mget](https://github.com/valdemar-2502/Redis-memcached-Homework/blob/main/redis2.png)
+![redis_keys_mget](https://github.com/valdemar-2502/Redis-memcached-Homework/blob/main/redis4.png)
 
 ---
 ## Дополнительные задания (со звездочкой*)
@@ -86,5 +89,5 @@ GET key5
 ```
 *Приведите скриншот, где будут проделаны все операции и будет видно, что значение key5 стало равно 10.*
 
-![redis_incrby](https://github.com/joos-net/redis-memcached/blob/main/redis_incrby.jpg)
+![redis_incrby](https://github.com/valdemar-2502/Redis-memcached-Homework/blob/main/redis3.png)
 
