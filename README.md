@@ -53,7 +53,7 @@ get KEY
 ```
 *Приведите скриншот, на котором видно, что спустя 5 секунд ключи удалились из базы.*
 
-![setget](https://github.com/joos-net/redis-memcached/blob/main/set-get.jpg)
+![setget](https://github.com/valdemar-2502/Redis-memcached-Homework/blob/main/memcached2.png)
 
 ### Задание 4. Запись данных в Redis
 Запишите в Redis несколько ключей с любыми именами и значениями.
